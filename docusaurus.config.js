@@ -5,8 +5,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'My Microsite Project',
+  title: 'Academic Microsite',
+  tagline: 'A simple academic and professional microsite',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -50,9 +50,9 @@ const config = {
       },
 
       navbar: {
-        title: 'My Site',
+        title: 'Academic Microsite',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Site Logo',
           src: 'img/logo.svg',
         },
 
@@ -74,7 +74,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Pages',
             items: [
               {
                 label: 'About',
@@ -86,8 +86,17 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/Ahmadjafari24',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Microsite`,
+        copyright: `Copyright © ${new Date().getFullYear()} Academic Microsite`,
       },
 
       prism: {
