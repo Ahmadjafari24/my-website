@@ -1,0 +1,99 @@
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+
+import {themes as prismThemes} from 'prism-react-renderer';
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'My Site',
+  tagline: 'My Microsite Project',
+  favicon: 'img/favicon.ico',
+
+  future: {
+    v4: true,
+  },
+
+  url: 'https://yourusername.github.io',
+  baseUrl: '/my-website/',
+
+  organizationName: 'yourusername',
+  projectName: 'my-website',
+
+  onBrokenLinks: 'throw',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+        },
+        blog: false, // removed blog for simplicity
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
+  ],
+
+  themeConfig:
+    ({
+      image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
+
+      navbar: {
+        title: 'My Site',
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
+        },
+
+        items: [
+          {
+            to: '/docs/about',
+            label: 'About',
+            position: 'left',
+          },
+          {
+            to: '/docs/contact',
+            label: 'Contact',
+            position: 'left',
+          },
+        ],
+      },
+
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'About',
+                to: '/docs/about',
+              },
+              {
+                label: 'Contact',
+                to: '/docs/contact',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Microsite`,
+      },
+
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+    }),
+};
+
+export default config;
