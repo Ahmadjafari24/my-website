@@ -13,10 +13,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://yourusername.github.io',
+  url: 'https://ahmadjafari24.github.io',
   baseUrl: '/my-website/',
 
-  organizationName: 'yourusername',
+  organizationName: 'Ahmadjafari24',
   projectName: 'my-website',
 
   onBrokenLinks: 'throw',
@@ -33,7 +33,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
         },
-        blog: false, // removed blog for simplicity
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
