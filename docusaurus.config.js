@@ -18,6 +18,7 @@ const config = {
 
   organizationName: 'Ahmadjafari24',
   projectName: 'my-website',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
